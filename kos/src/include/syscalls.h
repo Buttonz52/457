@@ -15,11 +15,6 @@
 extern "C" void* mmap(void* addr, size_t len, int prot, int flags, int filedes, off_t off);
 extern "C" int munmap(void* addr, size_t len);
 
-//added code
-extern "C" bool isEven(long n);
-extern "C" long sysadd(long n, long m);
-//added code
-
 extern "C" pid_t getcid();
 
 extern "C" int privilege(void*, mword, mword, mword, mword);
@@ -30,8 +25,6 @@ enum : mword {
   _exit = 0,
   open,
   close,
-  isEvenImpl, //3 - added code
-  sysAddImpl, //4 - added code
   read,
   write,
   lseek,

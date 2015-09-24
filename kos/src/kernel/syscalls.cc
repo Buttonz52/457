@@ -64,19 +64,6 @@ extern "C" void* _realloc_r(_reent* r, void* ptr, size_t size) {
 }
 
 
-/******* added code *******/
-
-extern "C" bool syscall_isEven(long n){
-    return !(n%2);
-}
-
-extern "C" long sysadd(long n, long m){
-    return (n+m);
-}
-
-/******* added code *******/
-
-
 /******* syscall functions *******/
 
 // libc exit calls atexit routines, then invokes _exit
@@ -255,10 +242,6 @@ static const syscall_t syscalls[] = {
   syscall_t(_exit),
   syscall_t(open),
   syscall_t(close),
-  //added code
-  syscall_t(syscall_isEven),
-  syscall_t(sysadd),
-  //added code
   syscall_t(read),
   syscall_t(write),
   syscall_t(lseek),

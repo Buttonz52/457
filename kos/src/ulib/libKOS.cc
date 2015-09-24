@@ -32,20 +32,6 @@ extern "C" void _initialize_KOS_standard_library() {
 
 extern "C" void abort() { _exit(-1); }
 
-
-/********* added code ************/
-
-extern "C" bool isEven(long n){
-    return syscallStub(SyscallNum::isEvenImpl, n);
-}
-
-extern "C" long sysadd(long n, long m) {
-    return syscallStub(SyscallNum::sysAddImpl, n, m);
-}
-
-/************* added code ********/
-
-
 extern "C" void _free_r(_reent* r, void* ptr) { free(ptr); }
 extern "C" void* _malloc_r(_reent* r, size_t size) { return malloc(size); }
 extern "C" void* _calloc_r(_reent* r, size_t nmemb, size_t size) { return calloc(nmemb, size); }
