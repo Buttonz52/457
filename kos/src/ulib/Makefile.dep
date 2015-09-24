@@ -1,0 +1,10 @@
+libKOS.o: libKOS.cc \
+ /home/ugd/bzpetras/Sem1year3/CPSC457/kos/src/ulib/../testoptions.h \
+ /home/ugd/bzpetras/Sem1year3/CPSC457/kos/src/ulib/../include/syscalls.h \
+ /home/ugd/bzpetras/Sem1year3/CPSC457/kos/src/ulib/../include/kostypes.h
+pthread.o: pthread.cc \
+ /home/ugd/bzpetras/Sem1year3/CPSC457/kos/src/ulib/../testoptions.h \
+ /home/ugd/bzpetras/Sem1year3/CPSC457/kos/src/ulib/../include/syscalls.h \
+ /home/ugd/bzpetras/Sem1year3/CPSC457/kos/src/ulib/../include/kostypes.h \
+ /home/ugd/bzpetras/Sem1year3/CPSC457/kos/src/ulib/../include/pthread.h \
+ /home/ugd/bzpetras/Sem1year3/CPSC457/kos/src/ulib/../include/syscalls.h
